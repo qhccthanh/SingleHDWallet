@@ -1,0 +1,497 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C60B12B2B39BEFB008DF934 /* SimpleWeb3WalletApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C60B12A2B39BEFB008DF934 /* SimpleWeb3WalletApp.swift */; };
+		4C60B12D2B39BEFB008DF934 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C60B12C2B39BEFB008DF934 /* ContentView.swift */; };
+		4C60B12F2B39BEFD008DF934 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C60B12E2B39BEFD008DF934 /* Assets.xcassets */; };
+		4C60B1322B39BEFD008DF934 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C60B1312B39BEFD008DF934 /* Preview Assets.xcassets */; };
+		4C60B13D2B39CADC008DF934 /* Crypto in Frameworks */ = {isa = PBXBuildFile; productRef = 4C60B13C2B39CADC008DF934 /* Crypto */; };
+		4C60B13F2B39CB57008DF934 /* HDWallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C60B13E2B39CB57008DF934 /* HDWallet.swift */; };
+		4CA93C552B3FC96E006A4823 /* bip39-wordlist.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4CA93C542B3FC96E006A4823 /* bip39-wordlist.txt */; };
+		4CA93C5B2B3FCEB9006A4823 /* BigInt in Frameworks */ = {isa = PBXBuildFile; productRef = 4CA93C5A2B3FCEB9006A4823 /* BigInt */; };
+		4CA93C632B3FD31B006A4823 /* secp256k1 in Frameworks */ = {isa = PBXBuildFile; productRef = 4CA93C622B3FD31B006A4823 /* secp256k1 */; };
+		4CA93C682B411838006A4823 /* EllipticCurveEncrypterSecp256k1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA93C672B411838006A4823 /* EllipticCurveEncrypterSecp256k1.swift */; };
+		4CA93C6E2B4260ED006A4823 /* KeccakTiny in Frameworks */ = {isa = PBXBuildFile; productRef = 4CA93C6D2B4260ED006A4823 /* KeccakTiny */; };
+		4CA93C702B4260ED006A4823 /* Sha3Tiny in Frameworks */ = {isa = PBXBuildFile; productRef = 4CA93C6F2B4260ED006A4823 /* Sha3Tiny */; };
+		4CA93C722B4260ED006A4823 /* SwiftKeccak in Frameworks */ = {isa = PBXBuildFile; productRef = 4CA93C712B4260ED006A4823 /* SwiftKeccak */; };
+		4CA93C742B426B5A006A4823 /* PrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA93C732B426B5A006A4823 /* PrivateKey.swift */; };
+		4CA93C762B426BF4006A4823 /* PublicKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA93C752B426BF4006A4823 /* PublicKey.swift */; };
+		4CA93C782B426FF6006A4823 /* BInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA93C772B426FF6006A4823 /* BInt.swift */; };
+		4CA93C7A2B427013006A4823 /* BInt+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA93C792B427013006A4823 /* BInt+Extension.swift */; };
+		4CA93C7C2B42C6CE006A4823 /* Mnemonic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA93C7B2B42C6CE006A4823 /* Mnemonic.swift */; };
+		4CA93C7E2B42D3E3006A4823 /* AssetRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA93C7D2B42D3E3006A4823 /* AssetRequest.swift */; };
+		4CB7DEA62B52DD9800A42204 /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = 4CB7DEA52B52DD9800A42204 /* URLImage */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4C60B1272B39BEFB008DF934 /* SimpleWeb3Wallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleWeb3Wallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C60B12A2B39BEFB008DF934 /* SimpleWeb3WalletApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleWeb3WalletApp.swift; sourceTree = "<group>"; };
+		4C60B12C2B39BEFB008DF934 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4C60B12E2B39BEFD008DF934 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4C60B1312B39BEFD008DF934 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4C60B13E2B39CB57008DF934 /* HDWallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDWallet.swift; sourceTree = "<group>"; };
+		4CA93C542B3FC96E006A4823 /* bip39-wordlist.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "bip39-wordlist.txt"; sourceTree = "<group>"; };
+		4CA93C672B411838006A4823 /* EllipticCurveEncrypterSecp256k1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EllipticCurveEncrypterSecp256k1.swift; sourceTree = "<group>"; };
+		4CA93C732B426B5A006A4823 /* PrivateKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateKey.swift; sourceTree = "<group>"; };
+		4CA93C752B426BF4006A4823 /* PublicKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicKey.swift; sourceTree = "<group>"; };
+		4CA93C772B426FF6006A4823 /* BInt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BInt.swift; sourceTree = "<group>"; };
+		4CA93C792B427013006A4823 /* BInt+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BInt+Extension.swift"; sourceTree = "<group>"; };
+		4CA93C7B2B42C6CE006A4823 /* Mnemonic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mnemonic.swift; sourceTree = "<group>"; };
+		4CA93C7D2B42D3E3006A4823 /* AssetRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetRequest.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4C60B1242B39BEFB008DF934 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CA93C702B4260ED006A4823 /* Sha3Tiny in Frameworks */,
+				4CA93C6E2B4260ED006A4823 /* KeccakTiny in Frameworks */,
+				4CA93C5B2B3FCEB9006A4823 /* BigInt in Frameworks */,
+				4CA93C632B3FD31B006A4823 /* secp256k1 in Frameworks */,
+				4CB7DEA62B52DD9800A42204 /* URLImage in Frameworks */,
+				4CA93C722B4260ED006A4823 /* SwiftKeccak in Frameworks */,
+				4C60B13D2B39CADC008DF934 /* Crypto in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4C60B11E2B39BEFB008DF934 = {
+			isa = PBXGroup;
+			children = (
+				4C60B1292B39BEFB008DF934 /* SimpleWeb3Wallet */,
+				4C60B1282B39BEFB008DF934 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4C60B1282B39BEFB008DF934 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C60B1272B39BEFB008DF934 /* SimpleWeb3Wallet.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4C60B1292B39BEFB008DF934 /* SimpleWeb3Wallet */ = {
+			isa = PBXGroup;
+			children = (
+				4CA93C642B4115DE006A4823 /* HDWallet */,
+				4CA93C542B3FC96E006A4823 /* bip39-wordlist.txt */,
+				4C60B12A2B39BEFB008DF934 /* SimpleWeb3WalletApp.swift */,
+				4C60B12C2B39BEFB008DF934 /* ContentView.swift */,
+				4C60B12E2B39BEFD008DF934 /* Assets.xcassets */,
+				4C60B1302B39BEFD008DF934 /* Preview Content */,
+			);
+			path = SimpleWeb3Wallet;
+			sourceTree = "<group>";
+		};
+		4C60B1302B39BEFD008DF934 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4C60B1312B39BEFD008DF934 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4CA93C642B4115DE006A4823 /* HDWallet */ = {
+			isa = PBXGroup;
+			children = (
+				4C60B13E2B39CB57008DF934 /* HDWallet.swift */,
+				4CA93C672B411838006A4823 /* EllipticCurveEncrypterSecp256k1.swift */,
+				4CA93C732B426B5A006A4823 /* PrivateKey.swift */,
+				4CA93C752B426BF4006A4823 /* PublicKey.swift */,
+				4CA93C772B426FF6006A4823 /* BInt.swift */,
+				4CA93C792B427013006A4823 /* BInt+Extension.swift */,
+				4CA93C7B2B42C6CE006A4823 /* Mnemonic.swift */,
+				4CA93C7D2B42D3E3006A4823 /* AssetRequest.swift */,
+			);
+			path = HDWallet;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4C60B1262B39BEFB008DF934 /* SimpleWeb3Wallet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C60B1352B39BEFD008DF934 /* Build configuration list for PBXNativeTarget "SimpleWeb3Wallet" */;
+			buildPhases = (
+				4C60B1232B39BEFB008DF934 /* Sources */,
+				4C60B1242B39BEFB008DF934 /* Frameworks */,
+				4C60B1252B39BEFB008DF934 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleWeb3Wallet;
+			packageProductDependencies = (
+				4C60B13C2B39CADC008DF934 /* Crypto */,
+				4CA93C5A2B3FCEB9006A4823 /* BigInt */,
+				4CA93C622B3FD31B006A4823 /* secp256k1 */,
+				4CA93C6D2B4260ED006A4823 /* KeccakTiny */,
+				4CA93C6F2B4260ED006A4823 /* Sha3Tiny */,
+				4CA93C712B4260ED006A4823 /* SwiftKeccak */,
+				4CB7DEA52B52DD9800A42204 /* URLImage */,
+			);
+			productName = SimpleWeb3Wallet;
+			productReference = 4C60B1272B39BEFB008DF934 /* SimpleWeb3Wallet.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4C60B11F2B39BEFB008DF934 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					4C60B1262B39BEFB008DF934 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 4C60B1222B39BEFB008DF934 /* Build configuration list for PBXProject "SimpleWeb3Wallet" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4C60B11E2B39BEFB008DF934;
+			packageReferences = (
+				4C60B13B2B39CADC008DF934 /* XCRemoteSwiftPackageReference "swift-crypto" */,
+				4CA93C592B3FCEB9006A4823 /* XCRemoteSwiftPackageReference "BigInt" */,
+				4CA93C612B3FD31B006A4823 /* XCRemoteSwiftPackageReference "secp256k1" */,
+				4CA93C6C2B4260ED006A4823 /* XCRemoteSwiftPackageReference "SwiftKeccak" */,
+				4CB7DEA42B52DD9800A42204 /* XCRemoteSwiftPackageReference "url-image" */,
+			);
+			productRefGroup = 4C60B1282B39BEFB008DF934 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4C60B1262B39BEFB008DF934 /* SimpleWeb3Wallet */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4C60B1252B39BEFB008DF934 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CA93C552B3FC96E006A4823 /* bip39-wordlist.txt in Resources */,
+				4C60B1322B39BEFD008DF934 /* Preview Assets.xcassets in Resources */,
+				4C60B12F2B39BEFD008DF934 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4C60B1232B39BEFB008DF934 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CA93C762B426BF4006A4823 /* PublicKey.swift in Sources */,
+				4C60B12D2B39BEFB008DF934 /* ContentView.swift in Sources */,
+				4CA93C782B426FF6006A4823 /* BInt.swift in Sources */,
+				4C60B12B2B39BEFB008DF934 /* SimpleWeb3WalletApp.swift in Sources */,
+				4CA93C682B411838006A4823 /* EllipticCurveEncrypterSecp256k1.swift in Sources */,
+				4CA93C7A2B427013006A4823 /* BInt+Extension.swift in Sources */,
+				4CA93C7E2B42D3E3006A4823 /* AssetRequest.swift in Sources */,
+				4C60B13F2B39CB57008DF934 /* HDWallet.swift in Sources */,
+				4CA93C742B426B5A006A4823 /* PrivateKey.swift in Sources */,
+				4CA93C7C2B42C6CE006A4823 /* Mnemonic.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4C60B1332B39BEFD008DF934 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4C60B1342B39BEFD008DF934 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4C60B1362B39BEFD008DF934 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SimpleWeb3Wallet/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qhcthanh.SimpleWeb3Wallet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4C60B1372B39BEFD008DF934 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SimpleWeb3Wallet/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qhcthanh.SimpleWeb3Wallet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4C60B1222B39BEFB008DF934 /* Build configuration list for PBXProject "SimpleWeb3Wallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C60B1332B39BEFD008DF934 /* Debug */,
+				4C60B1342B39BEFD008DF934 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C60B1352B39BEFD008DF934 /* Build configuration list for PBXNativeTarget "SimpleWeb3Wallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C60B1362B39BEFD008DF934 /* Debug */,
+				4C60B1372B39BEFD008DF934 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4C60B13B2B39CADC008DF934 /* XCRemoteSwiftPackageReference "swift-crypto" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-crypto.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		4CA93C592B3FCEB9006A4823 /* XCRemoteSwiftPackageReference "BigInt" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/attaswift/BigInt";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		4CA93C612B3FD31B006A4823 /* XCRemoteSwiftPackageReference "secp256k1" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/GigaBitcoin/secp256k1.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.15.0;
+			};
+		};
+		4CA93C6C2B4260ED006A4823 /* XCRemoteSwiftPackageReference "SwiftKeccak" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/bitflying/SwiftKeccak.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.2;
+			};
+		};
+		4CB7DEA42B52DD9800A42204 /* XCRemoteSwiftPackageReference "url-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dmytro-anokhin/url-image.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4C60B13C2B39CADC008DF934 /* Crypto */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4C60B13B2B39CADC008DF934 /* XCRemoteSwiftPackageReference "swift-crypto" */;
+			productName = Crypto;
+		};
+		4CA93C5A2B3FCEB9006A4823 /* BigInt */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4CA93C592B3FCEB9006A4823 /* XCRemoteSwiftPackageReference "BigInt" */;
+			productName = BigInt;
+		};
+		4CA93C622B3FD31B006A4823 /* secp256k1 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4CA93C612B3FD31B006A4823 /* XCRemoteSwiftPackageReference "secp256k1" */;
+			productName = secp256k1;
+		};
+		4CA93C6D2B4260ED006A4823 /* KeccakTiny */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4CA93C6C2B4260ED006A4823 /* XCRemoteSwiftPackageReference "SwiftKeccak" */;
+			productName = KeccakTiny;
+		};
+		4CA93C6F2B4260ED006A4823 /* Sha3Tiny */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4CA93C6C2B4260ED006A4823 /* XCRemoteSwiftPackageReference "SwiftKeccak" */;
+			productName = Sha3Tiny;
+		};
+		4CA93C712B4260ED006A4823 /* SwiftKeccak */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4CA93C6C2B4260ED006A4823 /* XCRemoteSwiftPackageReference "SwiftKeccak" */;
+			productName = SwiftKeccak;
+		};
+		4CB7DEA52B52DD9800A42204 /* URLImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4CB7DEA42B52DD9800A42204 /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 4C60B11F2B39BEFB008DF934 /* Project object */;
+}
